@@ -9,3 +9,7 @@ Feature: Shopping Functionality
     And Increase the preferred quantity by two and add to card
     And Navigate to Shopping Cart
     And Proceed to progress and provide an address
+    And Select the Anında Havale
+    And Select the VakıfBank with the Anında Havale Option
+    And Click continue bar
+    Then Verify that payment page is opened

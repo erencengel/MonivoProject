@@ -19,8 +19,30 @@ public class DeliveryPage extends BasePage{
     @FindBy(css = "input[name='phoneNumber.gsmNumber']")
     public WebElement phoneNumber;
 
-    @FindBy(xpath = "(//div[@style='position: relative; width: 100%;'])[1]")
-    public WebElement city;
+    @FindBy(css = "input#city")
+    public WebElement provideCity;
+
+    @FindBy(css = "input#town")
+    public WebElement provideTown;
+
+    @FindBy(css = "input#district")
+    public WebElement provideDistrict;
+
+    @FindBy(css = "textarea[name='detail']")
+    public WebElement address;
+
+    @FindBy(css = "input[placeholder='Örnek: Evim, İş yerim vb.']")
+    public WebElement giveAddressAName;
+
+    @FindBy(css = ".sc-AxgMl.iEtUpl")
+    public WebElement setBillingAddress;
+
+    @FindBy(css = ".button_QwrsX.min_padding_12wCn:nth-of-type(1)")
+    public WebElement saveAddress;
+
+    @FindBy(css = "#continue_step_btn")
+    public WebElement proceedButton;
+
 
 
 
