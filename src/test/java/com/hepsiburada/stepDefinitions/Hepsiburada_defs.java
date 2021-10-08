@@ -50,7 +50,7 @@ public class Hepsiburada_defs {
         String expected = searchPage.allListedProducts.get(itemNumber).getText();
         searchPage.allListedProducts.get(itemNumber).click();
         BrowserUtils.waitForClickability(homePage.shoppingCart,7);
-        String actual = selectedProductPage.productName.getText().trim();
+        String actual = selectedProductPage.productName.getText();
         Assert.assertEquals(expected,actual);
     }
 
